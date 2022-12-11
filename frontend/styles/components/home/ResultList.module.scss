@@ -1,0 +1,24 @@
+.result {
+    &List {
+        @apply w-full max-h-[300px] flex flex-col;
+    }
+
+    &Item {
+        @apply px-3 py-2 flex items-center gap-3 select-none cursor-pointer
+            hover:bg-gray-700;
+
+        &Image {
+            @apply flex-none w-8 h-8 rounded-full bg-red-100;
+        }
+        &Name {
+            @apply w-full text-sm font-semibold text-[#d6d6d6];
+        }
+        &Button {
+            @apply px-3 py-1 text-sm font-semibold bg-blue-500 text-white rounded-md hover:bg-blue-400;
+
+            &:disabled {
+                @apply opacity-50;
+            }
+        }
+    }
+}

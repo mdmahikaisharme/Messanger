@@ -1,0 +1,37 @@
+.chat {
+    @apply h-[calc(100vh-10.5rem)] px-3 py-2 flex flex-col gap-2 border-b-2 border-b-[#2B3944] overflow-y-scroll;
+
+    &Head {
+        @apply h-16 px-3 py-2 flex items-center gap-3 bg-[#2B3944] rounded-bl-lg rounded-br-lg select-none cursor-pointer;
+
+        &Right {
+            @apply grow flex flex-col;
+        }
+        &Image {
+            @apply flex-none w-12 h-12 rounded-full bg-red-100;
+        }
+        &Name {
+            @apply text-base font-semibold text-[#d6d6d6];
+        }
+        &Info {
+            @apply text-sm font-semibold text-[#596974];
+        }
+    }
+}
+
+.compose {
+    @apply w-full px-3 py-2 flex items-center gap-3;
+
+    &Button {
+        @apply flex-none w-8 h-8 grid place-items-center bg-[#28353E] rounded-full text-sm text-white;
+    }
+    &Form {
+        @apply w-full h-8 px-3 flex items-center gap-2 bg-[#28353E] rounded-md focus-within:bg-[#455966] hover:bg-[#455966];
+    }
+    &Input {
+        @apply w-full text-sm text-white bg-transparent outline-none;
+    }
+    &Send {
+        @apply flex-none w-5 h-5 grid place-items-center bg-[#28353E] rounded-full text-xs text-white;
+    }
+}

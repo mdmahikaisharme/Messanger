@@ -1,0 +1,26 @@
+.chat {
+    &List {
+        @apply w-full flex flex-col;
+    }
+
+    &Item {
+        @apply px-3 py-2 flex items-center gap-3 select-none cursor-pointer
+            hover:bg-gray-700;
+
+        &Image {
+            @apply flex-none w-10 h-10 rounded-full bg-red-100;
+        }
+        &Right {
+            @apply grow flex flex-col;
+        }
+        &Name {
+            @apply text-base font-semibold text-[#d6d6d6];
+        }
+        &Info {
+            @apply text-sm font-semibold text-[#596974];
+        }
+        &Active {
+            @apply bg-gray-700;
+        }
+    }
+}

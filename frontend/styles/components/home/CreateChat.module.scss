@@ -1,0 +1,26 @@
+.createChat {
+    --createChatW: 500px;
+
+    width: var(--createChatW);
+    @apply py-8 bg-gray-900 rounded-md;
+
+    &Title {
+        @apply mb-6 text-center text-2xl font-semibold text-white;
+    }
+
+    &Button {
+        @apply px-6 py-2 text-white text-sm font-semibold self-end bg-blue-500 rounded-md;
+    }
+}
+
+.slider {
+    width: var(--createChatW);
+    @apply overflow-hidden;
+
+    &Hold {
+        @apply flex transition-all duration-200;
+    }
+    &Slide {
+        min-width: var(--createChatW);
+    }
+}

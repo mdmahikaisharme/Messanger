@@ -1,0 +1,24 @@
+<!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+<!-- ----- ----- ----- ----- ----- ROUTES ----- ----- ----- ----- ----- -->
+<!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+
+<!-- Auth -->
+POST    - /auth/login               - login
+POST    - /auth/logout              - logout
+POST    - /auth/refresh             - refresh
+POST    - /auth/signup              - signup
+
+<!-- Message -->
+POST    - /message                  - createMessage
+GET     - /message/[chatId]         - getChatMessages
+DELETE  - /message/[messageId]      - deleteMessage
+
+<!-- Chat -->
+POST    - /chat                     - createChat
+GET     - /chat/user                - getUserChats
+GET     - /chat/[chatId]            - getChat
+DELETE  - /chat/[chatId]            - deleteChat
+
+<!-- User -->
+GET     - /user                     - getUser
+GET     - /user/all                 - getUsers

@@ -1,0 +1,9 @@
+.message {
+    @apply px-4 py-2  rounded-tl-2xl rounded-tr-2xl
+        self-start bg-blue-500 rounded-br-2xl;
+
+    &Me {
+        @apply px-4 py-2 rounded-tl-2xl rounded-tr-2xl
+            self-end bg-blue-500 rounded-bl-2xl;
+    }
+}

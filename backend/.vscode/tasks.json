@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "restart backend",
+            "type": "shell",
+            "command": "yarn run dev",
+            "presentation": {
+                "reveal": "never"
+            }
+        }
+    ]
+}
